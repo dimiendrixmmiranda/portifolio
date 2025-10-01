@@ -1,107 +1,107 @@
-import { FocusCards } from "@/components/ui/focus-cards";
+import { FocusCards } from "../ui/focus-cards";
 
 // Proximo passo é implementar os dialogs para cada card
 export function Certificados() {
     const cards = [
         {
-            title: "HTML e CSS 1",
-            src: "/certificados/1.jpg",
+            titulo: "HTML e CSS 1",
+            imagem: "/certificados/1.jpg",
         },
         {
-            title: "HTML e CSS 2",
-            src: "/certificados/2.jpg",
+            titulo: "HTML e CSS 2",
+            imagem: "/certificados/2.jpg",
         },
         {
-            title: "HTML e CSS 3",
-            src: "/certificados/3.jpg",
+            titulo: "HTML e CSS 3",
+            imagem: "/certificados/3.jpg",
         },
         {
-            title: "HTML e CSS 4",
-            src: "/certificados/4.jpg",
+            titulo: "HTML e CSS 4",
+            imagem: "/certificados/4.jpg",
         },
         {
-            title: "HTML e CSS 5",
-            src: "/certificados/5.jpg",
+            titulo: "HTML e CSS 5",
+            imagem: "/certificados/5.jpg",
         },
         {
-            title: "HTML e CSS 6",
-            src: "/certificados/24.png",
+            titulo: "HTML e CSS 6",
+            imagem: "/certificados/24.png",
         },
         {
-            title: "JavaScript 1",
-            src: "/certificados/6.jpg",
+            titulo: "JavaScript 1",
+            imagem: "/certificados/6.jpg",
         },
         {
-            title: "JavaScript 2",
-            src: "/certificados/7.jpg",
+            titulo: "JavaScript 2",
+            imagem: "/certificados/7.jpg",
         },
         {
-            title: "JavaScript 3",
-            src: "/certificados/8.jpg",
+            titulo: "JavaScript 3",
+            imagem: "/certificados/8.jpg",
         },
         {
-            title: "JavaScript 4",
-            src: "/certificados/9.jpg",
+            titulo: "JavaScript 4",
+            imagem: "/certificados/9.jpg",
         },
         {
-            title: "JavaScript 5",
-            src: "/certificados/10.jpg",
+            titulo: "JavaScript 5",
+            imagem: "/certificados/10.jpg",
         },
         {
-            title: "Lógica de Programação 1",
-            src: "/certificados/11.jpg",
+            titulo: "Lógica de Programação 1",
+            imagem: "/certificados/11.jpg",
         },
         {
-            title: "Lógica de Programação 2",
-            src: "/certificados/12.jpg",
+            titulo: "Lógica de Programação 2",
+            imagem: "/certificados/12.jpg",
         },
         {
-            title: "CSS 1",
-            src: "/certificados/13.jpg",
+            titulo: "CSS 1",
+            imagem: "/certificados/13.jpg",
         },
         {
-            title: "CSS 2",
-            src: "/certificados/20.png",
+            titulo: "CSS 2",
+            imagem: "/certificados/20.png",
         },
         {
-            title: "CSS 3",
-            src: "/certificados/21.png",
+            titulo: "CSS 3",
+            imagem: "/certificados/21.png",
         },
         {
-            title: "CSS 4",
-            src: "/certificados/22.png",
+            titulo: "CSS 4",
+            imagem: "/certificados/22.png",
         },
         {
-            title: "Sass e CSS 1",
-            src: "/certificados/14.jpg",
+            titulo: "Sass e CSS 1",
+            imagem: "/certificados/14.jpg",
         },
         {
-            title: "Sass e CSS 2",
-            src: "/certificados/15.jpg",
+            titulo: "Sass e CSS 2",
+            imagem: "/certificados/15.jpg",
         },
         {
-            title: "Tailwind 1",
-            src: "/certificados/16.jpg",
+            titulo: "Tailwind 1",
+            imagem: "/certificados/16.jpg",
         },
         {
-            title: "TypeScript 1",
-            src: "/certificados/17.jpg",
+            titulo: "TypeScript 1",
+            imagem: "/certificados/17.jpg",
         },
         {
-            title: "TypeScript 2",
-            src: "/certificados/18.jpg",
+            titulo: "TypeScript 2",
+            imagem: "/certificados/18.jpg",
         },
         {
-            title: "Bootstrap 1",
-            src: "/certificados/19.png",
+            titulo: "Bootstrap 1",
+            imagem: "/certificados/19.png",
         },
         {
-            title: "Git e Github",
-            src: "/certificados/23.png",
+            titulo: "Git e Github",
+            imagem: "/certificados/23.png",
         },
         {
-            title: "Regex",
-            src: "/certificados/25.jpg",
+            titulo: "Regex",
+            imagem: "/certificados/25.jpg",
         },
     ];
 

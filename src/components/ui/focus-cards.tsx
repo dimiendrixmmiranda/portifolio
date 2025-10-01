@@ -2,10 +2,10 @@
 
 import React, { useEffect, useRef, useState } from "react";
 import { cn } from "@/lib/utils";
-import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
+import { FaArrowLeft, FaArrowRight} from "react-icons/fa";
 import { Dialog } from "primereact/dialog";
 
-type CardType = { title: string; src: string };
+type CardType = { titulo: string, imagem: string, };
 
 const Card = React.memo(
   ({
@@ -26,22 +26,21 @@ const Card = React.memo(
       onMouseLeave={() => setHovered(null)}
       onClick={onClick}
       className={cn(
-        "rounded-lg relative bg-gray-100 dark:bg-neutral-900 overflow-hidden w-full",
+        "rounded-lg relative bg-white dark:bg-neutral-900 overflow-hidden w-full",
         "transition-all duration-500 ease-out cursor-pointer",
         hovered !== null && hovered !== index && "blur-sm scale-[0.97]"
       )}
     >
-      <div className="w-full h-[180px] sm:h-[240px] md:h-[220px] lg:h-[280px] 2xl:h-[230px]">
-        <img src={card.src} alt={card.title} className="object-cover w-full h-full" />
+      <div className={`w-full h-full p-4 flex flex-col gap-2 max-w-[400px] mx-auto`}>
+        <img src={card.imagem} alt={card.titulo} className="object-contain w-full h-full" />
       </div>
-
       <div
         className={cn(
           "absolute inset-0 bg-black/40 flex items-end py-3 px-4 transition-opacity duration-200",
           hovered === index ? "opacity-100" : "opacity-0"
         )}
       >
-        <div className="text-sm sm:text-lg font-bold text-white">{card.title}</div>
+        <div className="text-sm sm:text-lg font-bold text-white" style={{textShadow: '1px 1px 2px black'}}>{card.titulo}</div>
       </div>
     </div>
   )
@@ -117,7 +116,7 @@ export function FocusCards({ cards }: { cards: CardType[] }) {
       >
         {currentCards.map((card, i) => (
           <Card
-            key={`${card.title}-${start + i}`}
+            key={`${card.titulo}-${start + i}`}
             card={card}
             index={start + i}
             hovered={hovered}
@@ -147,13 +146,17 @@ export function FocusCards({ cards }: { cards: CardType[] }) {
 
       {/* Dialog do PrimeReact */}
       <Dialog
-        header={selectedCard?.title || ""}
+        header={selectedCard?.titulo || ""}
         visible={visible}
         onHide={() => setVisible(false)}
-        className="w-[95%] max-w-[1000px]"
+        className="w-[95%] max-w-[800px]"
       >
         {selectedCard && (
-          <img src={selectedCard.src} alt={selectedCard.title} className="w-full h-auto rounded" />
+          <div className="flex flex-col gap-4">
+            <div className="w-[200px] h-[200px] mx-auto md:w-[400px] md:h-[400px]">
+              <img src={selectedCard.imagem} alt={selectedCard.titulo} className="object-contain w-full h-full" />
+            </div>
+          </div>
         )}
       </Dialog>
     </div>
