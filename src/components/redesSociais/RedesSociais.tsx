@@ -11,7 +11,7 @@ export default function RedesSociais() {
         <div>
             <ul className='grid grid-cols-3 gap-3 max-w-[350px] mx-auto sm:grid-cols-4 md:max-w-[550px] md:grid-cols-7 lg:grid-cols-4 xl:grid-cols-7 xl:max-w-[550px]'>
                 <li className='flex justify-center'>
-                    <Link href={'/'}>
+                    <Link href={'https://www.facebook.com/dimi.martins.376'}>
                         <button className={`${styles["blob-btn"]} ${styles.facebook}`}>
                             <div className='flex items-center gap-2'>
                                 <FaFacebook className='text-4xl' />
@@ -29,7 +29,7 @@ export default function RedesSociais() {
                     </Link>
                 </li>
                 <li className='flex justify-center'>
-                    <Link href={'/'}>
+                    <Link href={'https://www.instagram.com/eudimimartins/'}>
                         <button className={`${styles["blob-btn"]} ${styles.instagram}`}>
                             <div className='flex items-center gap-2'>
                                 <AiFillInstagram className='text-4xl' />
@@ -47,7 +47,7 @@ export default function RedesSociais() {
                     </Link>
                 </li>
                 <li className='flex justify-center'>
-                    <Link href={'/'}>
+                    <Link href={'https://www.tiktok.com/@dimi.martins3?_t=ZM-90DoRqCZNNs&_r=1'}>
                         <button className={`${styles["blob-btn"]} ${styles.tiktok}`}>
                             <div className='flex items-center gap-2'>
                                 <FaTiktok className='text-4xl' />
@@ -65,7 +65,7 @@ export default function RedesSociais() {
                     </Link>
                 </li>
                 <li className='flex justify-center'>
-                    <Link href={'/'}>
+                    <Link href={'https://wa.me/5543988252886?text=Como%20posso%20ajudar%3F'}>
                         <button className={`${styles["blob-btn"]} ${styles.whatsapp}`}>
                             <div className='flex items-center gap-2'>
                                 <IoLogoWhatsapp className='text-4xl' />
@@ -83,7 +83,7 @@ export default function RedesSociais() {
                     </Link>
                 </li>
                 <li className='flex justify-center'>
-                    <Link href={'/'}>
+                    <Link href={'https://github.com/dimiendrixmmiranda/dimiendrixmmiranda'}>
                         <button className={`${styles["blob-btn"]} ${styles.github}`}>
                             <div className='flex items-center gap-2'>
                                 <FaSquareGithub className='text-4xl' />
@@ -101,7 +101,7 @@ export default function RedesSociais() {
                     </Link>
                 </li>
                 <li className='flex justify-center'>
-                    <Link href={'/'}>
+                    <Link href={'https://www.linkedin.com/in/dimi-endrix-martins-miranda-86a017341/'}>
                         <button className={`${styles["blob-btn"]} ${styles.linkedin}`}>
                             <div className='flex items-center gap-2'>
                                 <FaLinkedin className='text-4xl' />
@@ -119,7 +119,7 @@ export default function RedesSociais() {
                     </Link>
                 </li>
                 <li className='flex justify-center'>
-                    <Link href={'/'}>
+                    <Link href={'mailto:dimiendrixmmiranda@gmail.com'}>
                         <button className={`${styles["blob-btn"]} ${styles.email}`}>
                             <div className='flex items-center gap-2'>
                                 <MdEmail className='text-4xl' />

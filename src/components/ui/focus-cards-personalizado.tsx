@@ -7,7 +7,7 @@ import { Dialog } from "primereact/dialog";
 import Image from "next/image";
 import Link from "next/link";
 
-type CardType = { titulo: string, descricao: string, cor: string, imagem: string, previaDoSite: string };
+type CardType = { titulo: string, descricao: string, cor: string, imagem: string, previaDoSite: string, linkGithub: string };
 
 const Card = React.memo(
     ({
@@ -108,7 +108,7 @@ export function FocusCardsPersonalizado({ cards }: { cards: CardType[] }) {
     };
 
     return (
-        <div className="relative max-w-5xl 2xl:max-w-[1440px]">
+        <div className="relative max-w-5xl 2xl:max-w-[1440px] projetos">
             <div
                 className={cn(
                     "overflow-hidden w-full grid gap-4 mx-auto text-white px-4 py-6",
@@ -247,10 +247,17 @@ export function FocusCardsPersonalizado({ cards }: { cards: CardType[] }) {
                         </div>
                         <div className="grid grid-cols-2 gap-2">
                             <div className="flex justify-center items-center">
-                                <Link href={selectedCard.previaDoSite} className="uppercase font-bold bg-zinc-800 w-full h-full text-center p-2 flex items-center justify-center gap-2" target="_blank" rel="noopener noreferrer" ><FaMousePointer />Acessar</Link>
+                                <Link
+                                    href={selectedCard.previaDoSite}
+                                    className="uppercase font-bold bg-zinc-800 w-full h-full text-center p-2 flex items-center justify-center gap-2"
+                                >
+                                    <FaMousePointer /> Acessar
+                                </Link>
                             </div>
                             <div className="flex justify-center items-center">
-                                <Link href={'/'} className="uppercase font-bold bg-zinc-800 w-full h-full text-center p-2 flex items-center justify-center gap-2"><FaGithub />GitHub</Link>
+                                <Link href={selectedCard.linkGithub} className="uppercase font-bold bg-zinc-800 w-full h-full text-center p-2 flex items-center justify-center gap-2">
+                                    <FaGithub />GitHub
+                                </Link>
                             </div>
                         </div>
                     </div>

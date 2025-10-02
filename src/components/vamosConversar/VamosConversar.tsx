@@ -1,6 +1,7 @@
 import { IoLogoWhatsapp } from "react-icons/io";
 import { MdEmail } from "react-icons/md";
 import { BackgroudGrid } from "../backgroundGrid/BackgroundGrid";
+import Link from "next/link";
 
 export default function VamosConversar() {
 
@@ -19,14 +20,14 @@ export default function VamosConversar() {
                             <span>Engenheiro da Computação e Desenvolvedor FullStack</span>
                         </div>
                         <div className="grid grid-cols-2 gap-2 max-w-[550px] w-full mx-auto sm:gap-4">
-                            <div className='flex items-center justify-center gap-2 bg-zinc-200 rounded-lg p-2 text-preto'>
+                            <Link href={'mailto:dimiendrixmmiranda@gmail.com'} className='flex items-center justify-center gap-2 bg-zinc-200 rounded-lg p-2 text-preto'>
                                 <MdEmail className='text-3xl sm:text-4xl' />
                                 <p className='text-lg font-black sm:text-xl'>Email</p>
-                            </div>
-                            <div className='flex items-center justify-center gap-2 bg-zinc-200 rounded-lg p-2 text-preto'>
+                            </Link>
+                            <Link href={'https://wa.me/5543988252886?text=Como%20posso%20ajudar%3F'} className='flex items-center justify-center gap-2 bg-zinc-200 rounded-lg p-2 text-preto'>
                                 <IoLogoWhatsapp className='text-3xl sm:text-4xl' />
                                 <p className='text-lg font-black sm:text-xl'>WhatsApp</p>
-                            </div>
+                            </Link>
                         </div>
                     </div>
                 </div>
