@@ -249,13 +249,13 @@ export function FocusCardsPersonalizado({ cards }: { cards: CardType[] }) {
                             <div className="flex justify-center items-center">
                                 <Link
                                     href={selectedCard.previaDoSite}
-                                    className="uppercase font-bold bg-zinc-800 w-full h-full text-center p-2 flex items-center justify-center gap-2"
+                                    className="uppercase font-bold bg-zinc-600 w-full h-full text-center p-2 flex items-center justify-center gap-2"
                                 >
                                     <FaMousePointer /> Acessar
                                 </Link>
                             </div>
                             <div className="flex justify-center items-center">
-                                <Link href={selectedCard.linkGithub} className="uppercase font-bold bg-zinc-800 w-full h-full text-center p-2 flex items-center justify-center gap-2">
+                                <Link href={selectedCard.linkGithub} className="uppercase font-bold bg-zinc-600 w-full h-full text-center p-2 flex items-center justify-center gap-2">
                                     <FaGithub />GitHub
                                 </Link>
                             </div>
