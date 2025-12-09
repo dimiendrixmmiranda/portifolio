@@ -23,7 +23,7 @@ export function Cards() {
             imagem: "/projetos/logo-gamer-zone.png",
             cor: "bg-laranja",
             descricao: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
-            previaDoSite: "https://gamerzone-ten.vercel.app/",
+            previaDoSite: "https://gamerzone-five.vercel.app/",
             linkGithub: "https://github.com/dimiendrixmmiranda/gamerzone"
         },
         {
